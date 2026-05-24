@@ -530,3 +530,12 @@ a:hover { text-decoration: underline; }
   .feature { padding: 22px; }
   .footer-inner { text-align: center; }
 }
+/* Logo image sizing */
+.brand-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+.brand-logo-small {
+  height: 24px;
+}
