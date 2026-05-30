@@ -19,6 +19,82 @@
     height: 28px;
     display: block;
   }
+
+  /* Pricing section — scoped styles (style.css untouched) */
+  .pricing {
+    padding: 5rem 0;
+  }
+  .pricing-inner {
+    text-align: center;
+    max-width: 640px;
+  }
+  .pricing-lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    max-width: 30rem;
+    margin: 1rem auto 2.5rem;
+  }
+  .pricing-card {
+    background: #fff;
+    border: 1px solid #ece8e1;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    max-width: 26rem;
+    margin: 0 auto;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 12px 32px rgba(60,50,40,0.06);
+  }
+  .pricing-trial {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #8a7d6b;
+    margin: 0;
+  }
+  .pricing-price {
+    margin: 0.35rem 0 0;
+    line-height: 1;
+  }
+  .pricing-amount {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #2c2a27;
+  }
+  .pricing-once {
+    margin: 0.4rem 0 1.75rem;
+    font-size: 1rem;
+    color: #8a7d6b;
+  }
+  .pricing-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: grid;
+    gap: 0.85rem;
+  }
+  .pricing-points li {
+    position: relative;
+    padding-left: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #3a3a3a;
+  }
+  .pricing-points li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #b8a888;
+  }
+  .pricing-coda {
+    margin-top: 2.25rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #6a6258;
+  }
 </style>
 </head>
 <body>
@@ -31,6 +107,7 @@
     <nav class="site-nav">
       <a href="#features">Features</a>
       <a href="#privacy">Privacy</a>
+      <a href="#pricing">Pricing</a>
       <a href="support.html">Support</a>
     </nav>
   </div>
@@ -173,7 +250,34 @@
       </p>
       <p class="maker-body">
         There's no team. There's no investor deck. There's no growth roadmap.
-        Just one app, made carefully, that costs nothing extra to use and asks nothing of you.
+        Just one app, made carefully — bought once, kept forever, and asking nothing of you after that.
+      </p>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container pricing-inner">
+      <p class="section-eyebrow">Pricing</p>
+      <h2 class="section-title">Try it free. Then it's yours.</h2>
+      <p class="pricing-lead">
+        Use all of Quill free for 7 days. If it becomes part of your days,
+        unlock it once — and keep it for good.
+      </p>
+
+      <div class="pricing-card">
+        <p class="pricing-trial">7 days free</p>
+        <p class="pricing-price"><span class="pricing-amount">$4.99</span></p>
+        <p class="pricing-once">one time · yours forever</p>
+        <ul class="pricing-points">
+          <li>No subscription. No renewals. No surprise charges.</li>
+          <li>Every feature included — nothing held back behind a tier.</li>
+          <li>Shared with your household through Family Sharing.</li>
+          <li>Your data stays on your phone, the same as always.</li>
+        </ul>
+      </div>
+
+      <p class="pricing-coda">
+        One small price, paid once, from one parent to another.
       </p>
     </div>
   </section>
