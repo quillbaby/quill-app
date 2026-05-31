@@ -361,6 +361,91 @@ a:hover { text-decoration: underline; }
 .maker-body:last-child { margin-bottom: 0; }
 
 /* ───────────────────────────────────────────────────────────
+   Pricing
+   ─────────────────────────────────────────────────────────── */
+.pricing {
+  padding: 100px 0;
+}
+.pricing-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pricing-lead {
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  font-family: var(--font-display);
+  font-style: italic;
+  max-width: 30rem;
+  margin: 0 auto 48px;
+}
+.pricing-card {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 26rem;
+  margin: 0 auto;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+}
+.pricing-trial {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  color: var(--ink-faint);
+  margin: 0;
+}
+.pricing-price {
+  margin: 6px 0 0;
+  line-height: 1;
+}
+.pricing-amount {
+  font-family: var(--font-display);
+  font-size: 58px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: var(--ink);
+}
+.pricing-once {
+  margin: 8px 0 28px;
+  font-size: 15px;
+  color: var(--ink-faint);
+}
+.pricing-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.pricing-points li {
+  display: flex;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.pricing-points li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+.pricing-points li::before {
+  content: "→";
+  color: var(--accent);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.pricing-coda {
+  margin-top: 32px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink-soft);
+}
+
+/* ───────────────────────────────────────────────────────────
    CTA
    ─────────────────────────────────────────────────────────── */
 .cta {
@@ -522,7 +607,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 640px) {
   :root { --gutter: 20px; }
   .hero { padding: 60px 0 60px; }
-  .features, .privacy, .maker { padding: 64px 0; }
+  .features, .privacy, .maker, .pricing { padding: 64px 0; }
   .cta { padding: 80px 0; }
   .site-nav { gap: 16px; }
   .site-nav a { font-size: 13px; }
